@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> testing </title>
+        <style>
+            .bar {
+             position:absolute;
+             height: 100%;
+             width: 40px;
+             background-color: turquoise;
+            }
+            body{
+            margin: 0px;
+         }
+           .menu{
+           display: none;
+           height: 100%;
+           background-color: green;
+           position: absolute;
+         }
+           .menuitem{
+           /* display: inline-block; */
+           padding: 20px 50px 20px 50px;
+           position: relative;
+           /* height: 50px; */
+           width: 100px;
+           text-align: center;
+         }
+            .menu-item:hover {
+            background-color: lightcoral;
+            cursor: pointer;
+         }
+            .dropdown {
+             /* height: 400px; */
+             /* width: 150px; */
+             position:absolute;
+             display: block;
+             background-color: wheat;
+             top: 100%;
+             left: 200px;
+             display: none;
+         }
+            .menuitem:hover .dropdown {
+             background-color: lightcoral;
+             display: block;
+         }
+         .dropdownitem {
+             padding: 10px 30px 10px 30px;
+             white-space: nowrap;
+             cursor: pointer;
+         }
+         .dropdownitem:hover  {
+             background-color: lightcoral;
+         }
+         .dropdownitem a {
+             color: rgb(12, 11, 11);
+             text-decoration: none;
+         }
+         .bar:hover .menu{
+            display:block;
+            background-color: turquoise;
+        }
+        </style>
+    </head>
+    <body>
+        <div class = "bar">
+        <div class ="menu">
+            <div class = "menuitem"> menu 1
+                <div class="dropdown">
+                    <div class = "dropdownitem"> dropdown item!</div>
+                    <div class = "dropdownitem"> dropdown item!</div>
+                    <div class = "dropdownitem"> dropdown item!</div>
+                </div>
+            </div>
+            <div class = "menuitem"> menu 2
+                <div class="dropdown">
+                    <div class = "dropdownitem"> dropdown item!</div>
+                    <div class = "dropdownitem"> dropdown item!</div>
+                    <div class = "dropdownitem"> dropdown item!</div>
+                 </div>
+            </div>
+            <div class = "menuitem"> menu 3
+                <div class="dropdown">
+                    <div class = "dropdownitem"> dropdown item!</div>
+                    <div class = "dropdownitem"> dropdown item!</div>
+                    <div class = "dropdownitem"> dropdown item!</div>
+                </div>
+            </div>
+         </div>
+    </div>
+    </body>
+</html>
